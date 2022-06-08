@@ -1,0 +1,55 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.parent{
+    background-color: rgb(25, 14, 70);
+    border-radius: 20px;
+    width: 30%;
+    margin-left: 30%;
+    margin-top: 10%;
+    padding: 20px;
+    height: 500px;
+}
+
+.parent h3,h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.child input{
+    padding: 12px;
+    border-radius: 10px;
+    width: 85%;
+    background-color:#303245;
+    border: none;
+
+}
+
+.child ::placeholder{
+    color: rgb(190, 188, 188);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button{
+    
+    padding: 12px;
+    border-radius: 10px;
+    width: 90%;
+    background-color:#08d;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: aqua;
+    
+}
