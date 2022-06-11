@@ -15,9 +15,12 @@
             <h3>Let's take your some information</h3>
 
             <!-- <label for="username">First name</label></div> <br> -->
-            <p> <input type="text" placeholder="First name" id="fName"/></p>
-            <p> <input type="text" placeholder="Last name" id="lName"/></p>
-            <p><input type="email" placeholder="Email" id="mail"/></p>
+            <p> <input type="text" placeholder="First name" maxlength="15" id="fName" /></p>
+            <p id="error1"></p>
+            <p> <input type="text" placeholder="Last name" maxlength="15" id="lName"/></p>
+            <p id="error2"></p>
+            <p><input type="email" placeholder="Email" maxlength="30" id="mail"/></p>
+            <p id="error3"></p>
             <br>
             <p><button onClick="get()">Submit</button></p>
 

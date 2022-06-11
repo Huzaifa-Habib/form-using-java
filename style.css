@@ -53,3 +53,18 @@ button:hover{
     background-color: aqua;
     
 }
+
+#error1{
+    font-size: 10px;
+    line-height: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#error2{
+    font-size: 10px;
+    line-height: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold
+
+}

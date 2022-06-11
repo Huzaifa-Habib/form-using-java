@@ -4,6 +4,11 @@ function get() {
     var a = document.getElementById("fName");
     var b = document.getElementById("lName");
     var c = document.getElementById("mail");
+    var error1 =  document.getElementById("error1");
+    var error2 =  document.getElementById("error2");
+    // var error3 =  document.getElementById("error3");
+
+
 
     
 
@@ -20,23 +25,58 @@ function get() {
 
    
  
-    if (x.length <= 1 && z.length <=1 ) {
+    if (x.length <= 1 || z.length <=1 ) {
 
-        alert("Your name must contain more than one character");
+        error1.innerText= "Your name must contain more than one character";
+        error1.style.transition = "3s";
+        error1.style.color = "red";
+
+        error2.innerText= "Your name must contain more than one character";
+        error2.style.transition = "3s";
+        error2.style.color = "red";
     }
 
-    else if ( x.length >= 15 || z.length >= 15) {
-        alert("Your name must be in 15 characters");
+     if ( x.length >= 15 ) {
+        error1.innerText= "Your name must be in 15 characters";
+        error1.style.transition = "3s";
+        error1.style.color = "red";
 
     }
+
+    // else{
+    //     error1.innerText = "";
+    // }
+
+    if ( z.length >= 15) {
+        error2.innerText= "Your name must be in 15 characters";
+        error2.style.transition = "3s";
+        error2.style.color = "red";
+
+
+    }
+
+    // else{
+    //     error2.innerText = "";
+    // }
+
 
 //    else if(y === "/", "{}","[]","<>","()") {
 //        alert("These characters are not allowed");
 
 //    }
 
-   else if (x == "" || y == "" || z == "") {
-       alert("Please fill out all fields")
+    if (z === " ") {
+       error2 = "Please fill out all fields";
+       error2.style.transition = "3s";
+       error2.style.color = "red";
+
+    //    error2 ("Please fill out all fields")
+    //    error2.style.transition = "3s";
+    //    error2.style.color = "red";
+
+    //    error3 ("Please fill out all fields")
+    //    error3.style.transition = "3s";
+    //    error3.style.color = "red";
 
    }
 
